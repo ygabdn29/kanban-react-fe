@@ -1,16 +1,22 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
+import Dashboard from "./Dashboard";
+import Boards from "./Boards";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Dashboard></Dashboard>}>
+      <Route index element={<Boards></Boards>}></Route>
+    </Route>
+  )
+);
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <h1>Test</h1>
-    </>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
