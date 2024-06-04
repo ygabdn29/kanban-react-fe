@@ -8,7 +8,7 @@ function Navbar() {
           </a>
         </div>
 
-        <div className="flex-1 flex justify-between items-center">
+        <div className="flex-1 flex justify-between items-center border-l-2 border-b-2 border-ice-blue">
           <h1 className="lg:pl-6 lg:pt-[1.875rem] lg:pb-9">Platform Launch</h1>
 
           <div className="flex items-center lg:gap-6 lg:pr-8">

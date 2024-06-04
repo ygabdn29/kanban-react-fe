@@ -1,6 +1,6 @@
 function Boards() {
   return (
-    <div>
+    <div className="flex-1 bg-light-grey">
       <h1 className="text-black">Empty Boards</h1>
     </div>
   );
