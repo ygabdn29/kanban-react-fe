@@ -2,20 +2,30 @@ function Sidebar() {
   return (
     <div className="flex-1 flex lg:justify-between lg:flex-col lg:max-w-[18.75rem] bg-white border-r-2 border-ice-blue">
       <div className="flex flex-col lg:pr-8 lg:gap-5">
-        <h3 className="uppercase lg:pl-8">All Boards</h3>
+        <h3 className="uppercase font-bold text-medium-grey lg:text-xs lg:tracking-[0.2em] lg:pl-8">
+          All Boards
+        </h3>
 
         <ul>
-          <li className="bg-primary-purple lg:py-4">
-            <button className="lg:pl-8">Platform Launch</button>
-          </li>
-          <li className="lg:py-4 ">
-            <button className="lg:pl-8">Marketing Plan</button>
-          </li>
-          <li className="lg:py-4 ">
-            <button className="lg:pl-8">Roadmap</button>
+          <li className="bg-primary-purple lg:py-4 lg:rounded-tr-full lg:rounded-br-full">
+            <button className="font-bold text-white lg:text-[0.9375rem] lg:pl-8">
+              Platform Launch
+            </button>
           </li>
           <li className="lg:py-4">
-            <button className="lg:pl-8">+ Create New Board</button>
+            <button className="font-bold text-medium-grey bold lg:text-[0.9375rem] lg:pl-8">
+              Marketing Plan
+            </button>
+          </li>
+          <li className="lg:py-4 ">
+            <button className="font-bold text-medium-grey bold lg:text-[0.9375rem] lg:pl-8">
+              Roadmap
+            </button>
+          </li>
+          <li className="lg:py-4">
+            <button className="font-bold text-medium-grey bold lg:text-[0.9375rem] lg:pl-8">
+              + Create New Board
+            </button>
           </li>
         </ul>
       </div>
