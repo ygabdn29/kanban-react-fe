@@ -20,7 +20,7 @@ function Boards() {
           </div>
         ))}
 
-        <div className="flex-[1_0_auto] bg-ice-blue md:max-w-[17.5rem] w-full rounded-md grid place-content-center ">
+        <div className="flex-[1_0_auto] bg-ice-blue md:max-w-[17.5rem] w-full rounded-md grid place-content-center md:mt-10">
           <button className="font-bold text-2xl text-medium-grey">
             + New Column
           </button>
